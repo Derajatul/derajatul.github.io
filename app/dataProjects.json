@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "projectImg": "./projects/devjobs.png",
+    "projectName": "devjobs app - web pencari kerja"
+  },
+  {
+    "id": 2,
+    "projectImg": "./projects/cooboo.png",
+    "projectName": "cooboo - resep makanan"
+  }
+]
