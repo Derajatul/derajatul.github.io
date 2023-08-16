@@ -13,16 +13,16 @@ export default function Home() {
         <h2 className="text-xl font-bold py-5">tech stack</h2>
         <div className="flex w-64 justify-between py-2">
           <Badge>
-            <img src='/icons/javascript.svg' className="w-12" />
+            <img src='/icons/javascript.svg' alt="javascript" className="w-12" />
           </Badge>
           <Badge>
-            <img src='/icons/react.svg' className="w-12" />
+            <img src='/icons/react.svg' alt="react" className="w-12" />
           </Badge>
           <Badge>
-            <img src='/icons/nextjs.svg' className="w-12" />
+            <img src='/icons/nextjs.svg' alt="nextjs" className="w-12" />
           </Badge>
           <Badge>
-            <img src='/icons/jest.svg' className="w-12" />
+            <img src='/icons/jest.svg' alt="jest" className="w-12" />
           </Badge>
         </div>
       </section>
