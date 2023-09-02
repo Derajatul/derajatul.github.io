@@ -1,1 +1,0 @@
-# Infokan loker cuy
