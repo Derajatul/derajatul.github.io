@@ -1,12 +1,34 @@
 [
   {
     "id": 1,
-    "img": "./projects/devjobs.png",
-    "name": "devjobs app - web pencari kerja"
+    "img": "/projects/devjobs.png",
+    "name": "devjobs app",
+    "description": "web pencari kerja",
+    "url": "https://devjob-coral.vercel.app/",
+    "code": "https://github.com/Derajatul/devjob-web-app"
   },
   {
-    "id": 2,
-    "img": "./projects/cooboo.png",
-    "name": "cooboo - resep makanan"
+    "id":2,
+    "img": "/projects/collosal.png",
+    "name": "collosal",
+    "description": "landing page",
+    "url": "https://collosal-orpin.vercel.app/",
+    "code": "https://github.com/Derajatul/collosal"
+  },
+  {
+    "id": 3,
+    "img": "/projects/cooboo.png",
+    "name": "cooboo",
+    "description": "resep makanan",
+    "url": "https://cooboo.vercel.app/",
+    "code": "https://github.com/Derajatul/cooboo"
+  },
+  {
+    "id": 4,
+    "img": "/projects/movie.png",
+    "name": "movie.io",
+    "description": "movie database (on progress)",
+    "url": "https://moviedb-psi-ashy.vercel.app/",
+    "code": "https://github.com/Derajatul/movie-db-app-2"
   }
 ]
