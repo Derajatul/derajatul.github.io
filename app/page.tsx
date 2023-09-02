@@ -58,7 +58,10 @@ const ProjectList = () => {
           key={project.id}
           img={project.img} 
           name={project.name}
-          description={project.description} />
+          description={project.description}
+          url={project.url}
+          code={project.code}
+          />
       ))}
     </div> 
   )
