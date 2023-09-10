@@ -30,5 +30,13 @@
     "description": "movie database (on progress)",
     "url": "https://moviedb-psi-ashy.vercel.app/",
     "code": "https://github.com/Derajatul/movie-db-app-2"
+  },
+  {
+    "id": 5,
+    "img": "/projects/resumeBuilder.png",
+    "name": "resume builder",
+    "description": "resume builder",
+    "url": "https://resume-builder-tau-two.vercel.app/",
+    "code": "https://github.com/Derajatul/resume-builder"
   }
 ]
