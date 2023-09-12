@@ -8,7 +8,15 @@
     "code": "https://github.com/Derajatul/devjob-web-app"
   },
   {
-    "id":2,
+    "id": 2,
+    "img": "/projects/sneakers.png",
+    "name": "sneakers",
+    "description": "ecommerce section page",
+    "url": "https://ecommerce-product-page-pi-hazel.vercel.app/",
+    "code": "https://github.com/Derajatul/ecommerce-product-page"
+  },
+  {
+    "id": 3,
     "img": "/projects/collosal.png",
     "name": "collosal",
     "description": "landing page",
@@ -16,7 +24,7 @@
     "code": "https://github.com/Derajatul/collosal"
   },
   {
-    "id": 3,
+    "id": 4,
     "img": "/projects/cooboo.png",
     "name": "cooboo",
     "description": "resep makanan",
@@ -24,7 +32,7 @@
     "code": "https://github.com/Derajatul/cooboo"
   },
   {
-    "id": 4,
+    "id": 5,
     "img": "/projects/movie.png",
     "name": "movie.io",
     "description": "movie database (on progress)",
@@ -32,7 +40,7 @@
     "code": "https://github.com/Derajatul/movie-db-app-2"
   },
   {
-    "id": 5,
+    "id": 6,
     "img": "/projects/resumeBuilder.png",
     "name": "resume builder",
     "description": "resume builder",

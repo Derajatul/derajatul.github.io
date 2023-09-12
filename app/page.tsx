@@ -31,11 +31,11 @@ const SkillList: React.FC = () => {
       alt: 'tailwindcss',
       link: 'https://tailwindcss.com/'
     },
-    {
-      img: '/icons/jest.svg',
-      alt: 'jest',
-      link: 'https://jestjs.io/'
-    },
+    // {
+    //   img: '/icons/jest.svg',
+    //   alt: 'jest',
+    //   link: 'https://jestjs.io/'
+    // },
     
   ];
 
@@ -77,9 +77,9 @@ export default function Home() {
           dan 
         <Badge href="https://nextjs.org/"><img src="/icons/nextjs.svg" className="h-3 px-1"/> Next.js</Badge>
           . Saya memiliki tekad untuk menciptakan antarmuka pengguna yang menarik, responsif, dan berkinerja tinggi.</p>
-        <p className="py-2">Telah lulus sebagai Front-end Expert dari 
+        {/* <p className="py-2">Telah lulus sebagai Front-end Expert dari 
         <Badge href="https://www.dicoding.com/"><img src="/icons/dicoding.jpeg" className="h-3 px-1"/>Dicoding</Badge>
-          , menguasai konsep dan praktik terbaik dalam pengembangan front-end.</p>
+          , menguasai konsep dan praktik terbaik dalam pengembangan front-end.</p> */}
       </section>
       
       <section id="stack">
