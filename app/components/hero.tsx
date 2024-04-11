@@ -1,0 +1,25 @@
+import Image from "next/image";
+import Link from "next/link";
+import Avatar from "@/public/avatar/dera.png";
+import ButtonLink from "./button-link";
+
+export default function Hero() {
+  return (
+    <section className="relative container shrink-0 flex justify-center items-center gap-[90px] min-h-[100vh]">
+      <div className="flex-1 flex flex-col gap-10 items-start justify-start">
+        <h1 className="text-6xl font-bold">
+          Transforming <span className="pink__gradient">Designs</span> into
+          Digital Delights.
+        </h1>
+        <p className="text-light text-xl text-[#979797]">
+          Crafting captivating user experiences through cutting-edge frontend
+          development.
+        </p>
+        <ButtonLink href="/">Get started -&gt;</ButtonLink>
+      </div>
+      <div className="flex-1 flex justify-center items-center">
+        <Image src={Avatar} alt="avatar" width={450} height={450} />
+      </div>
+    </section>
+  );
+}

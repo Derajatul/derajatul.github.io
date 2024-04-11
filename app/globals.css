@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  color-scheme: dark;
+}
+
 body {
-  background-image: url("/background/bg--blob.png");
+  /* background-image: url("/background/bg--blob.png"); */
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center center;
+}
+.pink__gradient {
+  background: linear-gradient(180deg, #d74fb1 39%, #ffb8e6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* font-style: normal; */
 }
