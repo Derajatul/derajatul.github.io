@@ -1,9 +1,8 @@
-import clsx from "clsx";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { Metadata } from "next";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
-import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,14 +17,30 @@ export const metadata: Metadata = {
     "dera",
     "frontend freelance",
   ],
+  twitter: {
+    card: "summary_large_image",
+    site: "https://dera.dev",
+    creator: "@Deraj23",
+  },
   category: "Web Development",
   robots: "index, follow",
+  metadataBase: new URL("https://dera.dev"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/",
+    },
+  },
   openGraph: {
     title: "Dera | Frontend Developer",
     description: "Transforming Designs into Digital Delights.",
     type: "website",
     url: "https://dera.dev",
     images: ["/background/og.avif"],
+    siteName: "Dera",
+    emails: "derajatul@gmail.com",
+    countryName: "Indonesia",
+    locale: "id_ID",
   },
   icons: {
     icon: ["/favicon.ico?v=4"],
@@ -42,7 +57,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={clsx("bg-[#000000]", inter.className)}>
+      <body className={`bg-[#000000] ${inter.className}`}>
         <Navbar />
         {children}
         <Footer />

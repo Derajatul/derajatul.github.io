@@ -7,7 +7,7 @@ type Badge = {
   logo: string;
 };
 
-const Badge = ({ title, href, logo }: Badge) => {
+export default function Badge({ title, href, logo }: Badge) {
   return (
     <Link
       href={href}
@@ -24,5 +24,4 @@ const Badge = ({ title, href, logo }: Badge) => {
       <p>{title}</p>
     </Link>
   );
-};
-export default Badge;
+}
