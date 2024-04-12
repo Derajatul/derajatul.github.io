@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
-import Avatar from "@/public/avatar/dera.png";
+import Avatar from "@/public/avatar/dera.avif";
 import ButtonLink from "./button-link";
 
 export default function Hero() {
@@ -18,7 +17,14 @@ export default function Hero() {
         <ButtonLink href="/">Start project -&gt;</ButtonLink>
       </div>
       <div className="flex-1 lg:flex justify-center items-center hidden">
-        <Image src={Avatar} alt="avatar" width={450} height={450} />
+        <Image
+          src={Avatar}
+          alt="avatar"
+          width={450}
+          height={450}
+          priority
+          className="h-auto w-auto max-w-[450px] max-h-[450px]"
+        />
       </div>
     </section>
   );

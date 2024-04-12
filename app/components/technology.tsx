@@ -1,4 +1,3 @@
-import Badge from "./badge";
 import TechMarquee from "./tech-marquee";
 
 export default function Technology() {
@@ -9,7 +8,6 @@ export default function Technology() {
         with the Latest Modern Tools
       </h2>
       <TechMarquee direction="right" />
-      {/* <TechMarquee direction="left" /> */}
     </section>
   );
 }

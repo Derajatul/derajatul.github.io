@@ -2,13 +2,31 @@ import clsx from "clsx";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "./components/navbar";
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
+import { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Dera",
-  description: "Frontend developer portofolio",
+export const metadata: Metadata = {
+  title: "Dera | Frontend Developer",
+  description: "Transforming Designs into Digital Delights.",
+  creator: "Dera",
+  keywords: [
+    "frontend",
+    "developer",
+    "frontend developer",
+    "dera",
+    "frontend freelance",
+  ],
+  category: "Web Development",
+  robots: "index, follow",
+  openGraph: {
+    title: "Dera | Frontend Developer",
+    description: "Transforming Designs into Digital Delights.",
+    type: "website",
+    url: "https://dera.dev",
+    images: ["/background/og.avif"],
+  },
   icons: {
     icon: ["/favicon.ico?v=4"],
     apple: ["/apple-touch-icon.png?v=4"],
@@ -26,9 +44,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={clsx("bg-[#000000]", inter.className)}>
         <Navbar />
-        {/* <main className="min-h-screen">
-        </main>
-      <Footer /> */}
         {children}
         <Footer />
       </body>
