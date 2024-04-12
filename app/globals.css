@@ -1,40 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{
-  --background: #111010;
-  --headingText: #ffffff;
-  --linkText: #7F7F7F;
-  --paragraphText: #c8c8c8;
+
+:root {
+  color-scheme: dark;
 }
-*{
-  box-sizing: border-box;
-  /* border: 1px solid red; */
-  font-family: 'Inter', sans-serif;
-  
+
+body {
+  background-image: url("/background/bg--blob.avif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
 }
-h1,h2,h3,h4,h5,h6{
-  color: var(--headingText);
+.pink__gradient {
+  background: linear-gradient(180deg, #d74fb1 39%, #ffb8e6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-p,span{
-  color: var(--paragraphText);
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
-a{
-  color: var(--linkText);
-}
-html {
-  scroll-behavior: smooth;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--background);
-}
-body{
-  
-  min-height: 100vh;
-  width: 700px;
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px;
+.bg__nav {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
