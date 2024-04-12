@@ -1,3 +1,4 @@
+"use client";
 import Marquee from "react-fast-marquee";
 import Badge from "./badge";
 
@@ -35,7 +36,6 @@ export default function TechMarquee({
       autoFill={true}
       className="mb-4"
       direction={direction}
-      //   gradient={true}
       gradientColor="#000000"
     >
       <div className="flex items-center">
