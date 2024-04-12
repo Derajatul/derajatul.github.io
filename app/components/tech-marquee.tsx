@@ -35,7 +35,7 @@ export default function TechMarquee({
       autoFill={true}
       className="mb-4"
       direction={direction}
-      gradient={true}
+      //   gradient={true}
       gradientColor="#000000"
     >
       <div className="flex items-center">

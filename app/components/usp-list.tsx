@@ -25,7 +25,7 @@ const uspData = [
 
 export default function USPList() {
   return (
-    <section className="container grid grid-cols-4 gap-6 mb-28">
+    <section className="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-28 ">
       {uspData.map((v: { title: string; description: string }) => (
         <USP key={v.title} title={v.title} description={v.description} />
       ))}
