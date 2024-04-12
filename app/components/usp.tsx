@@ -7,7 +7,7 @@ export default function USP({
 }) {
   return (
     <div className="glass p-6">
-      <h3 className="mb-2 text-2xl">{title}</h3>
+      <h3 className="mb-2 text-2xl font-semibold">{title}</h3>
       <p className="text-[#979797]">{description}</p>
     </div>
   );

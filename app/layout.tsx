@@ -2,6 +2,7 @@ import clsx from "clsx";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "./components/navbar";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,12 +24,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={clsx("bg-[#000000] min-h-[300vh]", inter.className)}>
+      <body className={clsx("bg-[#000000]", inter.className)}>
         <Navbar />
         {/* <main className="min-h-screen">
         </main>
       <Footer /> */}
         {children}
+        <Footer />
       </body>
     </html>
   );
