@@ -24,22 +24,7 @@ export default function Hero() {
             fast, reliable Next.js sites that look great and feel even better to
             use.
           </p>
-          <ul className="flex flex-col gap-3 text-sm text-[#A0A0A0]">
-            <li className="flex items-start gap-3">
-              <span className="mt-1 h-2 w-2 rounded-full bg-pink-400" />
-              <span>
-                Focused build sprints for marketing pages, product dashboards,
-                and onboarding flows.
-              </span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="mt-1 h-2 w-2 rounded-full bg-pink-400" />
-              <span>
-                Clear updates, async check-ins, and quick previews so you always
-                know what’s next.
-              </span>
-            </li>
-          </ul>
+
           <div className="flex flex-wrap items-center gap-4">
             <ButtonLink href="#projects">Start a build sprint →</ButtonLink>
             <Link

@@ -7,3 +7,4 @@ Ini adalah proyek portofolio saya, di mana saya menampilkan pekerjaan-pekerjaan 
 Proyek ini memiliki beberapa fitur utama, antara lain:
 
 - Tampilan portofolio yang menarik dengan daftar proyek-proyek terbaru.
+- Seksi kontak di halaman utama dengan tautan langsung ke [derajatul@gmail.com](mailto:derajatul@gmail.com).

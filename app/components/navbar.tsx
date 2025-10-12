@@ -6,13 +6,19 @@ export default function Navbar() {
       <nav className="flex items-center justify-center">
         <div className="bg__nav fixed top-[0] py-6 bg-black  w-full container text-[#979797] z-50 flex justify-between items-center ">
           <Link href="/">DERA</Link>
-          <div className="flex gap-4">
-            {/* <Link href="#stack" className="hover:text-white">
-              stack
+          <div className="flex gap-4 text-sm uppercase tracking-[0.3em]">
+            <Link
+              href="#projects"
+              className="hover:text-white transition-colors"
+            >
+              Projects
             </Link>
-            <Link href="#projects" className="hover:text-white">
-              projects
-            </Link> */}
+            <Link
+              href="#contact"
+              className="hover:text-white transition-colors"
+            >
+              Contact
+            </Link>
           </div>
         </div>
       </nav>
