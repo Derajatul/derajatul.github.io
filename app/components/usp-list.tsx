@@ -2,33 +2,38 @@ import USP from "./usp";
 
 const uspData = [
   {
-    title: "Pixel-Perfect Precision",
+    title: "Design-to-Dev Harmony",
     description:
-      "I meticulously craft every detail of your website, ensuring seamless design integration and flawless user interaction.",
+      "Design systems translate into pixel-accurate, production-ready interfaces without compromises in motion or layout.",
   },
   {
-    title: "Cutting-Edge Technologies",
+    title: "Performance First Builds",
     description:
-      "With my expertise in the latest frontend frameworks and tools, I bring innovation and efficiency to every project.",
+      "Ship responsive experiences tuned for speed, accessibility, and lighthouse scores that make stakeholders smile.",
   },
   {
-    title: "User-Centric Approach",
+    title: "Collaborative Delivery",
     description:
-      "My focus is on creating intuitive interfaces and engaging user experiences that keep your audience coming back for more.",
+      "Transparent communication, async updates, and shared tooling keep every teammate in lockstep from kickoff to launch.",
   },
   {
-    title: "Timely Delivery",
+    title: "Reliable Iteration",
     description:
-      "I understand the importance of deadlines. Count on me to deliver high-quality work on time, every time.",
+      "Post-launch support, clear task estimates, and fast feedback loops ensure ongoing improvements stay on schedule.",
   },
 ];
 
 export default function USPList() {
   return (
-    <section className="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-28 ">
-      {uspData.map((v: { title: string; description: string }) => (
-        <USP key={v.title} title={v.title} description={v.description} />
-      ))}
+    <section className="container mb-28">
+      <h3 className="text-3xl lg:text-4xl font-semibold mb-10">
+        Why clients trust working with me
+      </h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+        {uspData.map((v: { title: string; description: string }) => (
+          <USP key={v.title} title={v.title} description={v.description} />
+        ))}
+      </div>
     </section>
   );
 }
