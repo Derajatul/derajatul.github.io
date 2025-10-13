@@ -2,25 +2,25 @@ import ProjectCard, { Project } from "./project-card";
 
 const projects: Project[] = [
   {
-    title: "GourmetGo Delivery Platform",
+    title: "BCA - Promo",
     description:
-      "A responsive food delivery web app with real-time order tracking, optimized for performance and accessibility across devices.",
+      "A dynamic promotional website for Bank Central Asia (BCA) showcasing current offers and services with a focus on user engagement and conversion.",
     tech: ["Next.js", "TypeScript", "Tailwind"],
-    href: "https://github.com/Derajatul/gourmetgo",
+    href: "https://promo.bca.co.id/",
   },
   {
-    title: "PixelCraft Portfolio Builder",
+    title: "BCA - Ocean",
     description:
-      "A drag-and-drop portfolio builder for designers to launch pixel-perfect sites without touching code, featuring custom theming.",
-    tech: ["React", "Zustand", "Framer Motion"],
-    href: "https://github.com/Derajatul/pixelcraft",
+      "Ocean by BCA connects businesses with banking, operational, and industry network ecosystems.",
+    tech: ["Next.js", "TypeScript", "Tailwind"],
+    href: "https://ocean.bca.co.id/",
   },
   {
-    title: "InsightSphere Analytics Dashboard",
+    title: "BCA - Piala Presiden",
     description:
-      "An analytics dashboard integrating multiple data sources and presenting insights with interactive charts and automated reporting.",
-    tech: ["Next.js", "Supabase", "Recharts"],
-    href: "https://github.com/Derajatul/insightsphere",
+      "Piala Presiden esport 2023 is a premier esports tournament in Indonesia, showcasing top-tier competitive gaming talent across the nation.",
+    tech: ["React", "Tailwind"],
+    href: "https://www.bca.co.id/id/Campaign/2021/Piala-Presiden",
   },
 ];
 

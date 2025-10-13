@@ -26,7 +26,7 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap items-center gap-4">
-            <ButtonLink href="#projects">Start a build sprint →</ButtonLink>
+            <ButtonLink href="#contact">Start a build sprint →</ButtonLink>
             <Link
               href="#projects"
               className="text-sm font-semibold text-neutral-100 underline decoration-white/40 underline-offset-8 transition-colors hover:text-pink-300"
