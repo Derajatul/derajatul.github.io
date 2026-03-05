@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Metadata } from "next";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import { LanguageProvider } from "./i18n/language-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -58,9 +59,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-[#000000] ${inter.className}`}>
-        <Navbar />
-        {children}
-        <Footer />
+        <LanguageProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );
