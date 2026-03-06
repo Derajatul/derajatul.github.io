@@ -46,10 +46,14 @@ export const en = {
 
   // Projects Section
   projects: {
-    title: "Recent Projects",
-    subtitle: "Some of my recent work",
-    viewProject: "View Project",
-    viewCode: "View Code",
+    badge: "Featured Work",
+    title: {
+      part1: "Showcasing ",
+      highlight: "Professional Projects",
+      part2: " that deliver results",
+    },
+    description:
+      "A collection of digital banking and business ecosystem projects developed professionally in a corporate environment (BCA) during my tenure.",
   },
 
   // Technology Section

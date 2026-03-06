@@ -48,10 +48,14 @@ export const id: Translations = {
 
   // Projects Section
   projects: {
-    title: "Proyek Terbaru",
-    subtitle: "Beberapa karya terbaru saya",
-    viewProject: "Lihat Proyek",
-    viewCode: "Lihat Kode",
+    badge: "Karya Terpilih",
+    title: {
+      part1: "Menampilkan ",
+      highlight: "Proyek Profesional",
+      part2: " yang memberikan hasil nyata",
+    },
+    description:
+      "Koleksi proyek perbankan digital dan ekosistem bisnis yang dikembangkan secara profesional di lingkungan korporat (BCA).",
   },
 
   // Technology Section

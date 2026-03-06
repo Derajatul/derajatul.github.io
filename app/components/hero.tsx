@@ -15,21 +15,21 @@ export default function Hero() {
         <div className="absolute left-[-140px] top-[-160px] h-[340px] w-[340px] rounded-full bg-pink-500/20 blur-3xl" />
         <div className="absolute right-[-180px] bottom-[-160px] h-[360px] w-[360px] rounded-full bg-blue-500/20 blur-3xl" />
       </div>
-      <div className="container relative flex flex-col-reverse lg:flex-row items-center justify-between gap-16 py-24 lg:py-32">
-        <div className="flex-1 flex flex-col items-start gap-8 text-left">
+      <div className="container relative flex flex-col items-center text-center gap-10 py-24 lg:py-40">
+        <div className="max-w-4xl flex flex-col items-center gap-8">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-neutral-200">
             {t.hero.badge}
           </span>
-          <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+          <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
             {t.hero.title.part1}{" "}
             <span className="pink__gradient">{t.hero.title.highlight}</span>{" "}
             {t.hero.title.part2}
           </h1>
-          <p className="max-w-xl text-lg lg:text-xl leading-relaxed text-[#C2C2C2]">
+          <p className="max-w-2xl text-lg lg:text-xl leading-relaxed text-[#C2C2C2]">
             {t.hero.description}
           </p>
 
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-6">
             <ButtonLink href="#contact">{t.hero.cta}</ButtonLink>
             <Link
               href="#projects"
@@ -37,30 +37,6 @@ export default function Hero() {
             >
               {t.hero.viewWork}
             </Link>
-          </div>
-          {/* <div className="flex flex-wrap gap-6 text-sm text-[#B1B1B1]">
-            <div>
-              <p className="text-3xl font-semibold text-neutral-100">48h</p>
-              <p>for your first working preview</p>
-            </div>
-            <div>
-              <p className="text-3xl font-semibold text-neutral-100">100%</p>
-              <p>remote-friendly and async-ready</p>
-            </div>
-          </div> */}
-        </div>
-
-        <div className="flex-1 flex items-center justify-center">
-          <div className="relative">
-            <div className="absolute -inset-6 -z-10 rounded-[36px] bg-white/5 blur-3xl" />
-            <Image
-              src={Avatar}
-              alt="Portrait of Derajatul, frontend engineer"
-              width={450}
-              height={450}
-              priority
-              className="h-auto w-auto max-w-[420px] rounded-[32px] border border-white/10 bg-white/5 p-6 backdrop-blur"
-            />
           </div>
         </div>
       </div>
