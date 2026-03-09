@@ -11,7 +11,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="container py-24 lg:py-32 flex flex-col gap-16"
+      className="container py-24 lg:py-32 flex flex-col gap-16 mx-auto"
     >
       <header className="max-w-3xl flex flex-col gap-6">
         <p className="text-sm uppercase tracking-[0.35em] text-pink-300">

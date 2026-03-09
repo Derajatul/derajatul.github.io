@@ -10,7 +10,7 @@ export default function USPList() {
   }[];
 
   return (
-    <section className="container mb-28">
+    <section className="container mb-28 mx-auto">
       <h2 className="text-3xl lg:text-4xl font-semibold mb-10">
         {t("usp.title")}
       </h2>

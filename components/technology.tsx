@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 export default function Technology() {
   const t = useTranslations();
   return (
-    <section className="container mb-28">
+    <section className="container mb-28 mx-auto">
       <h2 className="text-4xl lg:text-5xl font-bold mb-4">
         {t("technology.title")}
       </h2>

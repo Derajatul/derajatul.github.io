@@ -7,7 +7,7 @@ const Footer = () => {
   const t = useTranslations("footer");
 
   return (
-    <footer className="mt-28 border-t container h-36 flex items-center justify-between">
+    <footer className="mt-28 border-t container h-36 flex items-center justify-between mx-auto">
       <div className="flex flex-col gap-1">
         <span>Dera © {new Date().getFullYear()}</span>
         <span className="text-xs text-neutral-400">{t("rights")}</span>

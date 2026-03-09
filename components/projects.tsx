@@ -7,7 +7,10 @@ export default function Projects() {
   const t = useTranslations();
 
   return (
-    <section id="projects" className="container mb-28 flex flex-col gap-10">
+    <section
+      id="projects"
+      className="container mb-28 flex flex-col gap-10 mx-auto"
+    >
       <header>
         <p className="text-sm uppercase tracking-[0.35em] text-pink-300">
           {t("projects.badge")}
