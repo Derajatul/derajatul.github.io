@@ -11,9 +11,9 @@ export default function USPList() {
 
   return (
     <section className="container mb-28">
-      <h3 className="text-3xl lg:text-4xl font-semibold mb-10">
+      <h2 className="text-3xl lg:text-4xl font-semibold mb-10">
         {t("usp.title")}
-      </h3>
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
         {uspData.map((v) => (
           <USP key={v.title} title={v.title} description={v.description} />

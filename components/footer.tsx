@@ -10,14 +10,14 @@ const Footer = () => {
     <footer className="mt-28 border-t container h-36 flex items-center justify-between">
       <div className="flex flex-col gap-1">
         <span>Dera © {new Date().getFullYear()}</span>
-        <span className="text-xs text-neutral-500">{t("rights")}</span>
+        <span className="text-xs text-neutral-400">{t("rights")}</span>
       </div>
 
       <div className="flex gap-5">
         <Link
           href="https://github.com/Derajatul"
           aria-label="Visit my GitHub"
-          className="p-3 text-neutral-500 transition-colors hover:text-neutral-800 dark:hover:text-neutral-300"
+          className="p-3 text-neutral-400 transition-colors hover:text-neutral-800 dark:hover:text-neutral-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ const Footer = () => {
         <Link
           href="https://www.linkedin.com/in/moh-tb-derajatul-ula-1aa110235/"
           aria-label="Visit my LinkedIn"
-          className="p-3 text-neutral-500 transition-colors hover:text-neutral-800 dark:hover:text-neutral-300"
+          className="p-3 text-neutral-400 transition-colors hover:text-neutral-800 dark:hover:text-neutral-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -17,9 +17,9 @@ export default function ContactSection() {
         <p className="text-sm uppercase tracking-[0.35em] text-pink-300">
           {t("title")}
         </p>
-        <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+        <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
           {t("subtitle")}
-        </h1>
+        </h2>
         <p className="text-lg text-[#C2C2C2]">
           Want to chat through scope first? Send a quick email with timelines,
           goals, and any design files. I’ll reply personally within one business

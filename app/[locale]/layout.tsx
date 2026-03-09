@@ -65,7 +65,7 @@ export default async function RootLayout({
       <body className={`bg-[#000000] ${inter.className}`}>
         <NextIntlClientProvider messages={messages}>
           <Navbar />
-          {children}
+          <main>{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>
