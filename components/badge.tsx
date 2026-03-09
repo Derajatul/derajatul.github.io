@@ -13,7 +13,7 @@ export default function Badge({ title, href, logo, tagline }: Badge) {
     <Link
       href={href}
       target="_blank"
-      className="ml-4 glass px-6 py-4 min-h-[86px] leading-4 text-neutral-100 inline-flex items-center gap-4 text-left transition-transform"
+      className="ml-4 glass px-6 py-4 min-h-[125.6px] leading-4 text-neutral-100 inline-flex items-start gap-4 text-left transition-transform"
     >
       <Image
         src={logo}

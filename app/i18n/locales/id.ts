@@ -56,12 +56,55 @@ export const id: Translations = {
     },
     description:
       "Koleksi proyek perbankan digital dan ekosistem bisnis yang dikembangkan secara profesional di lingkungan korporat (BCA).",
+    items: [
+      {
+        title: "BCA - Promo",
+        description:
+          "Situs web promosi dinamis untuk Bank Central Asia (BCA) yang menampilkan penawaran dan layanan terbaru dengan fokus pada interaksi dan konversi pengguna.",
+        tech: ["Next.js", "TypeScript", "Tailwind"],
+        href: "https://promo.bca.co.id/",
+        image: "/projects/bca-promo.png",
+      },
+      {
+        title: "BCA - Ocean",
+        description:
+          "Ocean by BCA menghubungkan bisnis dengan perbankan, operasional, dan ekosistem jaringan industri.",
+        tech: ["Next.js", "TypeScript", "Tailwind"],
+        href: "https://ocean.bca.co.id/",
+        image: "/projects/bca-ocean.png",
+      },
+      {
+        title: "BCA - Piala Presiden",
+        description:
+          "Piala Presiden esport 2023 adalah turnamen esport utama di Indonesia, menampilkan talenta kompetitif papan atas di seluruh negeri.",
+        tech: ["React", "Tailwind"],
+        href: "https://www.bca.co.id/id/Campaign/2021/Piala-Presiden",
+        image: "/projects/bca-piala-presiden.png",
+      },
+      {
+        title: "BCA - Simulasi Obligasi",
+        description:
+          "Simulator imbalan obligasi interaktif untuk pasar perdana BCA, memungkinkan pengguna menghitung return obligasi sampai jatuh tempo dengan efisien.",
+        tech: ["Next.js", "TypeScript", "Tailwind"],
+        href: "https://www.bca.co.id/id/individu/produk/investasi-dan-asuransi/obligasi",
+        image: "/projects/bca-simulasi-obligasi.png",
+      },
+      {
+        title: "BCA - Bangga Lokal",
+        description:
+          "Program dukungan BCA bagi UMKM dan brand lokal Indonesia melalui pengembangan bisnis, promosi, dan kemudahan transaksi, mencakup kolaborasi komunitas dan pelatihan.",
+        tech: ["React", "TypeScript", "Tailwind"],
+        href: "https://promo.bca.co.id/id/bangga-lokal-2025#/",
+        image: "/projects/bca-bangga-lokal.png",
+      },
+    ],
   },
 
   // Technology Section
   technology: {
-    title: "Teknologi yang Saya Gunakan",
-    subtitle: "Alat modern untuk website modern",
+    title: "Alat yang memastikan peluncuran Anda lancar",
+    subtitle:
+      "Anda tidak perlu mempelajari tumpukan teknisnya—cukup ketahui bahwa setiap pilihan di sini menjaga situs Anda tetap cepat, aman, dan mudah diperbarui. Ini adalah bahan-bahan yang saya andalkan untuk memberikan hasil yang andal.",
   },
 
   // Contact Section

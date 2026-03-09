@@ -54,12 +54,55 @@ export const en = {
     },
     description:
       "A collection of digital banking and business ecosystem projects developed professionally in a corporate environment (BCA) during my tenure.",
+    items: [
+      {
+        title: "BCA - Promo",
+        description:
+          "A dynamic promotional website for Bank Central Asia (BCA) showcasing current offers and services with a focus on user engagement and conversion.",
+        tech: ["Next.js", "TypeScript", "Tailwind"],
+        href: "https://promo.bca.co.id/",
+        image: "/projects/bca-promo.png",
+      },
+      {
+        title: "BCA - Ocean",
+        description:
+          "Ocean by BCA connects businesses with banking, operational, and industry network ecosystems.",
+        tech: ["Next.js", "TypeScript", "Tailwind"],
+        href: "https://ocean.bca.co.id/",
+        image: "/projects/bca-ocean.png",
+      },
+      {
+        title: "BCA - Piala Presiden",
+        description:
+          "Piala Presiden esport 2023 is a premier esports tournament in Indonesia, showcasing top-tier competitive gaming talent across the nation.",
+        tech: ["React", "Tailwind"],
+        href: "https://www.bca.co.id/id/Campaign/2021/Piala-Presiden",
+        image: "/projects/bca-piala-presiden.png",
+      },
+      {
+        title: "BCA - Simulasi Obligasi",
+        description:
+          "An interactive bond return simulator for BCA's primary market, allowing users to calculate investment returns until maturity efficiently.",
+        tech: ["Next.js", "TypeScript", "Tailwind"],
+        href: "https://www.bca.co.id/id/individu/produk/investasi-dan-asuransi/obligasi",
+        image: "/projects/bca-simulasi-obligasi.png",
+      },
+      {
+        title: "BCA - Bangga Lokal",
+        description:
+          "BCA's support program for MSMEs and local brands through business development, promotion, and transaction ease, including community collaboration and training.",
+        tech: ["React", "TypeScript", "Tailwind"],
+        href: "https://www.bca.co.id/id/Campaign/2020/bangga-lokal",
+        image: "/projects/bca-bangga-lokal.png",
+      },
+    ],
   },
 
   // Technology Section
   technology: {
-    title: "Technologies I Use",
-    subtitle: "Modern tools for modern websites",
+    title: "Tools that keep your next launch smooth",
+    subtitle:
+      "You don’t need to learn the stack—just know that every choice here keeps your site fast, secure, and easy to update. These are the ingredients I rely on to ship dependable results.",
   },
 
   // Contact Section

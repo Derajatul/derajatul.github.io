@@ -1,7 +1,7 @@
 "use client";
 
-import { useLanguage } from "../i18n/language-context";
-import { Locale, localeNames } from "../i18n/locales";
+import { useLanguage } from "../app/i18n/language-context";
+import { Locale, localeNames } from "../app/i18n/locales";
 
 export default function LanguageSwitcher() {
   const { locale, setLocale } = useLanguage();
