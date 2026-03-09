@@ -87,11 +87,12 @@ export default function TechMarquee({
       autoFill
       className="mb-4"
       direction={direction}
+      gradient={true}
       gradientColor="#000000"
       pauseOnHover
       speed={24}
     >
-      <div className="flex items-center">
+      <div className="flex gap-4 pr-4 items-center">
         {technologyData.map((tech) => (
           <Badge
             key={tech.title}
