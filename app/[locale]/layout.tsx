@@ -1,9 +1,10 @@
-import "./globals.css";
+import "../globals.css";
 import { Inter } from "next/font/google";
 import { Metadata } from "next";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
-import { LanguageProvider } from "./i18n/language-context";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, getLocale } from "next-intl/server";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,19 +52,22 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const messages = await getMessages();
+  const locale = await getLocale();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`bg-[#000000] ${inter.className}`}>
-        <LanguageProvider>
+        <NextIntlClientProvider messages={messages}>
           <Navbar />
           {children}
           <Footer />
-        </LanguageProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

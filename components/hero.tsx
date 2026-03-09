@@ -46,13 +46,11 @@
 import React from "react";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/spotlight";
-import { useLanguage } from "@/app/i18n/language-context";
-import ButtonLink from "./button-link";
-import Link from "next/link";
 import { Button } from "./ui/button";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
-  const { t } = useLanguage();
+  const t = useTranslations();
   return (
     <div className="relative flex min-h-screen lg:h-[50rem] w-full overflow-hidden rounded-md bg-black/[0.96] antialiased items-center justify-center">
       <div
@@ -68,23 +66,23 @@ export default function Hero() {
       />
       <div className="relative z-10 mx-auto w-full max-w-7xl p-4 py-20 md:py-0">
         <h1 className="text-white text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
-          {t.hero.title.part1}{" "}
-          <span className="pink__gradient">{t.hero.title.highlight}</span>{" "}
-          {t.hero.title.part2}
+          {t("hero.title.part1")}{" "}
+          <span className="pink__gradient">{t("hero.title.highlight")}</span>{" "}
+          {t("hero.title.part2")}
         </h1>
         <p className="mx-auto mb-10 mt-6 max-w-2xl text-center text-base sm:text-lg md:text-xl font-normal text-neutral-300 leading-relaxed">
-          {t.hero.description}
+          {t("hero.description")}
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
           <Button size="lg" className="w-full sm:w-auto font-semibold">
-            {t.hero.cta}
+            {t("hero.cta")}
           </Button>
           <Button
             size="lg"
             variant="secondary"
             className="w-full sm:w-auto font-semibold"
           >
-            {t.hero.viewWork}
+            {t("hero.viewWork")}
           </Button>
         </div>
       </div>

@@ -1,14 +1,20 @@
 "use client";
 
-import { useLanguage } from "../app/i18n/language-context";
-import { Locale, localeNames } from "../app/i18n/locales";
+import { useLocale } from "next-intl";
+import { useRouter, usePathname } from "@/i18n/routing";
+import { useParams } from "next/navigation";
 
 export default function LanguageSwitcher() {
-  const { locale, setLocale } = useLanguage();
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+  const params = useParams();
 
   const toggleLocale = () => {
-    const newLocale: Locale = locale === "en" ? "id" : "en";
-    setLocale(newLocale);
+    const nextLocale = locale === "en" ? "id" : "en";
+
+    // @ts-expect-error -- TypeScript doesn't know that our `params` matches the routing configuration
+    router.replace({ pathname, params }, { locale: nextLocale });
   };
 
   return (

@@ -1,19 +1,19 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
-import { useLanguage } from "../app/i18n/language-context";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./language-switcher";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function Navbar() {
-  const { t } = useLanguage();
+  const t = useTranslations();
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { href: "#projects", label: t.nav.projects },
-    { href: "#contact", label: t.nav.contact },
+    { href: "#projects", label: t("nav.projects") },
+    { href: "#contact", label: t("nav.contact") },
   ];
 
   return (
