@@ -1,7 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 export type Project = {
+  slug: string;
   title: string;
   description: string;
   tech: string[];
@@ -10,6 +11,7 @@ export type Project = {
 };
 
 export default function ProjectCard({
+  slug,
   title,
   description,
   tech,
@@ -21,25 +23,23 @@ export default function ProjectCard({
       <div className="relative z-10">
         <div className="flex justify-between items-start mb-2">
           <h3 className="text-2xl font-semibold leading-tight pr-8">{title}</h3>
-          {href && (
-            <div className="absolute right-0 top-0 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-0 -translate-x-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-pink-300"
-              >
-                <line x1="7" y1="17" x2="17" y2="7"></line>
-                <polyline points="7 7 17 7 17 17"></polyline>
-              </svg>
-            </div>
-          )}
+          <div className="absolute right-0 top-0 opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:translate-x-0 -translate-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-pink-300"
+            >
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </div>
         </div>
         <p className="text-[#979797] leading-relaxed mb-4">{description}</p>
         <ul className="flex flex-wrap gap-2 mb-6">
@@ -69,13 +69,9 @@ export default function ProjectCard({
     </article>
   );
 
-  if (href) {
-    return (
-      <Link href={href} target="_blank" className="block h-full group">
-        {CardContent}
-      </Link>
-    );
-  }
-
-  return CardContent;
+  return (
+    <Link href={`/projects/${slug}`} className="block h-full group">
+      {CardContent}
+    </Link>
+  );
 }

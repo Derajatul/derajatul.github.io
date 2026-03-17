@@ -47,38 +47,115 @@
     "description": "Koleksi proyek perbankan digital dan ekosistem bisnis yang dikembangkan secara profesional untuk BCA melalui IT vendor Doubler.",
     "items": [
       {
+        "slug": "bca-promo",
         "title": "BCA - Promo",
-        "description": "Situs web promosi dinamis yang dikembangkan melalui Doubler untuk BCA, menampilkan penawaran dan layanan terbaru dengan fokus pada interaksi dan konversi pengguna.",
+        "role": "Frontend Developer (Vendor: Doubler)",
+        "timeline": "2023 - Sekarang",
+        "description": "Website promosi dinamis yang dikembangkan melalui Doubler untuk BCA, menampilkan penawaran dan layanan terkini dengan fokus pada keterlibatan pengguna dan konversi.",
+        "longDescription": "Membangun platform promosi dengan trafik tinggi untuk bank swasta terbesar di Indonesia membutuhkan fokus pada performa dan aksesibilitas. Proyek ini melibatkan pembuatan sistem modular untuk mengelola berbagai banner promosi dan elemen interaktif.",
         "tech": ["Next.js", "TypeScript", "Tailwind"],
+        "features": [
+          "Penyaringan Dinamis",
+          "Tata Letak Responsif",
+          "Performa Tinggi"
+        ],
+        "challenges": [
+          "Mengoptimalkan pengiriman gambar untuk pengguna seluler.",
+          "Menjaga konsistensi desain di berbagai tata letak promosi yang kompleks."
+        ],
+        "solutions": [
+          "Mengimplementasikan optimasi Gambar Next.js dengan pemuat khusus.",
+          "Mengembangkan pustaka komponen bersama untuk konsistensi UI."
+        ],
         "href": "https://promo.bca.co.id/",
         "image": "/projects/bca-promo.png"
       },
       {
+        "slug": "bca-ocean",
         "title": "BCA - Ocean",
-        "description": "Ekosistem digital yang dikembangkan melalui Doubler untuk menghubungkan bisnis dengan perbankan, operasional, dan jaringan industri BCA.",
+        "role": "Frontend Developer (Vendor: Doubler)",
+        "timeline": "2024 - 2025",
+        "description": "Ekosistem digital yang dikembangkan melalui Doubler untuk menghubungkan bisnis dengan jaringan perbankan, operasional, dan industri BCA.",
+        "longDescription": "BCA Ocean adalah platform penemuan B2B yang kompleks. Saya mengerjakan pembangunan antarmuka inti yang memungkinkan bisnis menemukan dan terhubung dengan layanan yang relevan dalam ekosistem BCA.",
         "tech": ["Next.js", "TypeScript", "Tailwind"],
+        "features": [
+          "Direktori Bisnis",
+          "Integrasi Layanan",
+          "Dashboard Pengguna"
+        ],
+        "challenges": [
+          "Mengelola state yang kompleks di seluruh struktur direktori bersarang.",
+          "Memastikan waktu muat yang cepat meskipun ada visualisasi data yang berat."
+        ],
+        "solutions": [
+          "Menggunakan React Query untuk pengambilan data dan caching yang efisien.",
+          "Mengimplementasikan pemisahan kode dan pemuatan malas untuk komponen bagan yang berat."
+        ],
         "href": "https://ocean.bca.co.id/",
         "image": "/projects/bca-ocean.png"
       },
       {
+        "slug": "bca-piala-presiden",
         "title": "BCA - Piala Presiden",
-        "description": "Situs turnamen esports utama Indonesia yang dikembangkan melalui Doubler untuk BCA, menampilkan talenta kompetitif papan atas di seluruh negeri.",
+        "role": "Frontend Developer (Vendor: Doubler)",
+        "timeline": "2023",
+        "description": "Website turnamen esports terkemuka di Indonesia yang dikembangkan melalui Doubler untuk BCA, menampilkan talenta gaming kompetitif tingkat atas.",
+        "longDescription": "Platform esports berenergi tinggi yang membutuhkan pembaruan waktu nyata dan braket turnamen interaktif. Saya fokus pada presentasi interaktif skor dan profil pemain.",
         "tech": ["React", "Tailwind"],
+        "features": ["Skor Langsung", "Braket Turnamen", "Profil Pemain"],
+        "challenges": [
+          "Mengimplementasikan braket turnamen interaktif yang kompleks.",
+          "Mensinkronisasi data langsung tanpa muat ulang halaman."
+        ],
+        "solutions": [
+          "Menggunakan CSS Grid dan logika SVG kustom untuk braket.",
+          "Mengimplementasikan WebSockets untuk pembaruan waktu nyata."
+        ],
         "href": "https://www.bca.co.id/id/Campaign/2021/Piala-Presiden",
         "image": "/projects/bca-piala-presiden.png"
       },
       {
+        "slug": "bca-simulasi-obligasi",
         "title": "BCA - Simulasi Obligasi",
+        "role": "Frontend Developer (Vendor: Doubler)",
+        "timeline": "2023",
         "description": "Simulator imbal hasil obligasi interaktif yang dikembangkan melalui Doubler untuk pasar perdana BCA, memungkinkan pengguna menghitung return obligasi sampai jatuh tempo dengan efisien.",
+        "longDescription": "Alat kalkulator keuangan yang membantu calon investor memahami imbal hasil mereka. Presisi dan UI yang jelas sangat penting untuk proyek ini.",
         "tech": ["Next.js", "TypeScript", "Tailwind"],
-        "href": "https://www.bca.co.id/id/individu/produk/investasi-dan-asuransi/obligasi",
+        "features": ["Kalkulator ROI", "Grafik Interaktif", "Ekspor PDF"],
+        "challenges": [
+          "Memastikan presisi matematis dalam kalkulasi JavaScript.",
+          "Membuat grafik keuangan yang responsif."
+        ],
+        "solutions": [
+          "Menggunakan Decimal.js untuk matematika keuangan yang presisi.",
+          "Mengimplementasikan Chart.js dengan konfigurasi responsif kustom."
+        ],
+        "href": "https://promo.bca.co.id/id/bangga-lokal-2025",
         "image": "/projects/bca-simulasi-obligasi.png"
       },
       {
+        "slug": "bca-bangga-lokal",
         "title": "BCA - Bangga Lokal",
-        "description": "Program dukungan BCA bagi UMKM dan brand lokal Indonesia yang dikembangkan melalui Doubler, mencakup pengembangan bisnis, promosi, dan kemudahan transaksi.",
+        "role": "Frontend Developer (Vendor: Doubler)",
+        "timeline": "2025",
+        "description": "Program dukungan BCA untuk UMKM yang dikembangkan melalui Doubler, berfokus pada pengembangan bisnis, promosi, dan kemudahan transaksi.",
+        "longDescription": "Platform bergaya pasar yang didedikasikan untuk mendukung bisnis lokal Indonesia. Saya membangun bagian penemuan toko dan promosi.",
         "tech": ["React", "TypeScript", "Tailwind"],
-        "href": "https://promo.bca.co.id/id/bangga-lokal-2025#/",
+        "features": [
+          "Direktori UMKM",
+          "Banner Promosi",
+          "Pencarian Interaktif"
+        ],
+        "challenges": [
+          "Menangani data UMKM dalam jumlah besar pada satu halaman.",
+          "Menciptakan UI desain yang menarik dan berfokus pada komunitas."
+        ],
+        "solutions": [
+          "Mengimplementasikan virtualisasi untuk daftar panjang UMKM.",
+          "Menggunakan ilustrasi SVG kustom dan pola soft UI."
+        ],
+        "href": "https://www.bca.co.id/id/Campaign/2020/bangga-lokal",
         "image": "/projects/bca-bangga-lokal.png"
       }
     ]
