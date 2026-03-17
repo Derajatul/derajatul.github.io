@@ -9,15 +9,19 @@ import { getMessages, getLocale } from "next-intl/server";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dera | Frontend Developer",
-  description: "Transforming Designs into Digital Delights.",
+  title: "Dera | Solo Frontend Partner",
+  description: "I help founders, agencies, and small teams turn their ideas into fast, reliable Next.js sites that look great and feel even better to use.",
   creator: "Dera",
   keywords: [
     "frontend",
     "developer",
-    "frontend developer",
+    "nextjs",
+    "react",
+    "tailwindcss",
     "dera",
-    "frontend freelance",
+    "agency partner",
+    "solo partner",
+    "web developer indonesia",
   ],
   twitter: {
     card: "summary_large_image",
@@ -34,8 +38,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Dera | Frontend Developer",
-    description: "Transforming Designs into Digital Delights.",
+    title: "Dera | Solo Frontend Partner",
+    description: "Build polished websites that help your business grow. Next.js specialist serving founders and agencies.",
     type: "website",
     url: "https://dera.dev",
     images: ["/og/og-image.png"],
