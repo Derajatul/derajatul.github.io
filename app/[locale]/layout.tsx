@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     description: "Transforming Designs into Digital Delights.",
     type: "website",
     url: "https://dera.dev",
-    images: ["/avatar/dera.avif"],
+    images: ["/og/og-image.png"],
     siteName: "Dera",
     emails: "derajatul@gmail.com",
     countryName: "Indonesia",
