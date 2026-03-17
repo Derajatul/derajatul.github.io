@@ -25,12 +25,12 @@ export const metadata: Metadata = {
   ],
   twitter: {
     card: "summary_large_image",
-    site: "https://dera.dev",
+    site: "https://dera.my.id",
     creator: "@Deraj23",
   },
   category: "Web Development",
   robots: "index, follow",
-  metadataBase: new URL("https://dera.dev"),
+  metadataBase: new URL("https://dera.my.id"),
   alternates: {
     canonical: "/",
     languages: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Dera | Solo Frontend Partner",
     description: "Build polished websites that help your business grow. Next.js specialist serving founders and agencies.",
     type: "website",
-    url: "https://dera.dev",
+    url: "https://dera.my.id",
     images: ["/og/og-image.png"],
     siteName: "Dera",
     emails: "derajatul@gmail.com",
