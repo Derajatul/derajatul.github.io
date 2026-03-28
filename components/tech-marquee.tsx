@@ -1,4 +1,5 @@
 "use client";
+import React, { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
 import Badge from "./badge";
 
@@ -82,6 +83,24 @@ export default function TechMarquee({
 }: {
   direction: "left" | "right";
 }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <div className="h-16 md:h-[125.6px] mb-4 overflow-hidden flex items-center">
+        <div className="flex gap-4 pr-4">
+          {[...Array(12)].map((_, i) => (
+            <div key={i} className="glass w-16 h-16 md:w-[200px] md:h-[125.6px] flex-shrink-0 animate-pulse" />
+          ))}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <Marquee
       autoFill
@@ -90,7 +109,7 @@ export default function TechMarquee({
       gradient={true}
       gradientColor="#000000"
       pauseOnHover
-      speed={24}
+      speed={30}
     >
       <div className="flex gap-4 pr-4 items-center">
         {technologyData.map((tech) => (

@@ -13,16 +13,17 @@ export default function Badge({ title, href, logo, tagline }: Badge) {
     <Link
       href={href}
       target="_blank"
-      className="glass px-6 py-4 min-h-[125.6px] leading-4 text-neutral-100 inline-flex items-start gap-4 text-left transition-transform flex-shrink-0"
+      className="glass w-16 h-16 md:w-auto md:h-auto md:px-6 md:py-4 md:min-h-[125.6px] leading-4 text-neutral-100 inline-flex items-center justify-center md:items-start md:justify-start gap-0 md:gap-4 text-left transition-transform flex-shrink-0"
     >
-      <Image
-        src={logo}
-        alt={title}
-        width={44}
-        height={44}
-        className="w-auto h-auto max-w-[44px] max-h-[44px]"
-      />
-      <div className="flex flex-col gap-1">
+      <div className="relative w-8 h-8 md:w-11 md:h-11 flex-shrink-0">
+        <Image
+          src={logo}
+          alt={title}
+          fill
+          className="object-contain"
+        />
+      </div>
+      <div className="hidden md:flex flex-col gap-1">
         <p className="text-xl font-semibold">{title}</p>
         {tagline ? (
           <p className="text-sm text-neutral-300 max-w-[200px]">{tagline}</p>
