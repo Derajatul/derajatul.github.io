@@ -1,4 +1,3 @@
-"use client";
 import TechMarquee from "./tech-marquee";
 import { useTranslations } from "next-intl";
 
@@ -12,7 +11,7 @@ export default function Technology() {
       <p className="max-w-3xl text-lg text-[#B8B8B8] mb-10">
         {t("technology.subtitle")}
       </p>
-      <TechMarquee direction="right" />
+      <TechMarquee />
     </section>
   );
 }

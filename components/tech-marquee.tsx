@@ -1,127 +1,66 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import Marquee from "react-fast-marquee";
-import Badge from "./badge";
+import Image from "next/image";
 
-const technologyData = [
+const stackGroups = [
   {
-    logo: "/icons/nextjs.svg",
-    title: "NextJS",
-    href: "https://nextjs.org/",
-    tagline: "Lightning-fast pages that rank well and feel instant.",
+    title: "FE",
+    stacks: [
+      { name: "React", logo: "/icons/react.svg" },
+      { name: "Next.js", logo: "/icons/nextjs.svg" },
+      { name: "Tailwind CSS", logo: "/icons/tailwindcss.svg" },
+      { name: "TypeScript", logo: "/icons/typescript.svg" },
+    ],
   },
   {
-    logo: "/icons/react.svg",
-    title: "React",
-    href: "https://react.dev/",
-    tagline: "Reusable components for smooth product flows.",
+    title: "BE",
+    stacks: [
+      { name: "Node.js", logo: "/icons/nodejs.svg" },
+      { name: "Express", logo: "/icons/express.svg" },
+      { name: "Prisma", logo: "/icons/prisma.svg" },
+    ],
   },
   {
-    logo: "/icons/typescript.svg",
-    title: "TypeScript",
-    href: "https://www.typescriptlang.org/",
-    tagline: "Fewer surprises thanks to typed, reliable code.",
+    title: "Infra",
+    stacks: [
+      { name: "Docker", logo: "/icons/docker.svg" },
+      { name: "PostgreSQL", logo: "/icons/postgres.svg" },
+    ],
   },
   {
-    logo: "/icons/nodejs.svg",
-    title: "Node.js",
-    href: "https://nodejs.org/",
-    tagline: "High-performance server-side JavaScript runtime.",
-  },
-  {
-    logo: "/icons/express.svg",
-    title: "Express",
-    href: "https://expressjs.com/",
-    tagline: "Fast, unopinionated, minimalist web framework.",
-  },
-  {
-    logo: "/icons/prisma.svg",
-    title: "Prisma",
-    href: "https://www.prisma.io/",
-    tagline: "Next-generation Node.js and TypeScript ORM.",
-  },
-  {
-    logo: "/icons/postgres.svg",
-    title: "PostgreSQL",
-    href: "https://www.postgresql.org/",
-    tagline: "The world's most advanced open source database.",
-  },
-  {
-    logo: "/icons/tailwindcss.svg",
-    title: "Tailwind CSS",
-    href: "https://tailwindcss.com/",
-    tagline: "Consistent design without slowing down delivery.",
-  },
-  {
-    logo: "/icons/figma.svg",
-    title: "Figma",
-    href: "https://www.figma.com/",
-    tagline: "Collaborative interface design for modern teams.",
-  },
-  {
-    logo: "/icons/vscode.svg",
-    title: "VS Code",
-    href: "https://code.visualstudio.com/",
-    tagline: "Powerful code editor for efficient development.",
-  },
-  {
-    logo: "/icons/git.svg",
-    title: "Git",
-    href: "https://git-scm.com/",
-    tagline: "Distributed version control for seamless collaboration.",
-  },
-  {
-    logo: "/icons/vercel.svg",
-    title: "Vercel",
-    href: "https://vercel.com/",
-    tagline: "The platform for frontend developers to ship fast.",
+    title: "Testing",
+    stacks: [
+      { name: "vitest", logo: "/icons/vitest.svg" },
+    ],
   },
 ];
 
-export default function TechMarquee({
-  direction,
-}: {
-  direction: "left" | "right";
-}) {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return (
-      <div className="h-16 md:h-[125.6px] mb-4 overflow-hidden flex items-center">
-        <div className="flex gap-4 pr-4">
-          {[...Array(12)].map((_, i) => (
-            <div key={i} className="glass w-16 h-16 md:w-[200px] md:h-[125.6px] flex-shrink-0 animate-pulse" />
-          ))}
-        </div>
-      </div>
-    );
-  }
-
+export default function TechMarquee() {
   return (
-    <Marquee
-      autoFill
-      className="mb-4"
-      direction={direction}
-      gradient={true}
-      gradientColor="#000000"
-      pauseOnHover
-      speed={30}
-    >
-      <div className="flex gap-4 pr-4 items-center">
-        {technologyData.map((tech) => (
-          <Badge
-            key={tech.title}
-            title={tech.title}
-            href={tech.href}
-            logo={tech.logo}
-            tagline={tech.tagline}
-          />
-        ))}
-      </div>
-    </Marquee>
+    <div className="grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+      {stackGroups.map((group) => (
+        <div key={group.title}>
+          <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-neutral-400">
+            {group.title}
+          </h3>
+          <ul className="flex flex-wrap gap-3" aria-label={`${group.title} stack`}>
+            {group.stacks.map((stack) => (
+              <li key={stack.name}>
+                <div
+                  title={stack.name}
+                  className="glass flex size-16 items-center justify-center transition-transform duration-200 hover:-translate-y-1 md:size-[72px]"
+                >
+                  <Image
+                    src={stack.logo}
+                    alt={stack.name}
+                    width={40}
+                    height={40}
+                    className="size-9 object-contain md:size-10"
+                  />
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
   );
 }
