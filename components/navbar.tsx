@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./language-switcher";
@@ -10,6 +10,36 @@ import { cn } from "@/lib/utils";
 export default function Navbar() {
   const t = useTranslations();
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const lastScrollY = useRef(0);
+  const isOpenRef = useRef(isOpen);
+
+  useEffect(() => {
+    isOpenRef.current = isOpen;
+  }, [isOpen]);
+
+  useEffect(() => {
+    lastScrollY.current = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const scrollDistance = currentScrollY - lastScrollY.current;
+
+      if (currentScrollY < 40 || isOpenRef.current) {
+        setIsVisible(true);
+        lastScrollY.current = currentScrollY;
+      } else if (scrollDistance > 8) {
+        setIsVisible(false);
+        lastScrollY.current = currentScrollY;
+      } else if (scrollDistance < -8) {
+        setIsVisible(true);
+        lastScrollY.current = currentScrollY;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinks = [
     { href: "#projects", label: t("nav.projects") },
@@ -18,7 +48,12 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 flex justify-center p-4 sm:p-6">
+    <header
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 flex justify-center p-4 transition-transform duration-300 ease-out sm:p-6",
+        isVisible ? "translate-y-0" : "pointer-events-none -translate-y-full",
+      )}
+    >
       <nav
         className={cn(
           "bg__nav w-full max-w-7xl rounded-2xl border border-white/10 bg-black/50 backdrop-blur-md transition-all duration-300",
