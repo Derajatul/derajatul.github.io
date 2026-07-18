@@ -3,6 +3,7 @@
     "home": "Beranda",
     "projects": "Proyek",
     "technology": "Teknologi",
+    "github": "GitHub",
     "contact": "Kontak"
   },
   "hero": {
@@ -163,6 +164,34 @@
   "technology": {
     "title": "Alat yang memastikan peluncuran Anda lancar",
     "subtitle": "Anda tidak perlu mempelajari tumpukan teknisnya—cukup ketahui bahwa setiap pilihan di sini menjaga situs Anda tetap cepat, aman, dan mudah diperbarui. Ini adalah bahan-bahan yang saya andalkan untuk memberikan hasil yang andal."
+  },
+  "github": {
+    "badge": "Aktivitas open source",
+    "title": "Berkarya secara terbuka di GitHub",
+    "subtitle": "Tampilan langsung repository, teknologi, dan aktivitas publik terbaru yang mendukung praktik pengembangan saya.",
+    "stats": {
+      "repositories": "Repository",
+      "stars": "Stars diperoleh",
+      "followers": "Pengikut"
+    },
+    "recentActivity": "Aktivitas terbaru",
+    "featuredRepositories": "Repository unggulan",
+    "topLanguages": "Bahasa yang paling sering digunakan",
+    "viewProfile": "Lihat profil GitHub",
+    "updated": "Diperbarui {date}",
+    "noDescription": "Belum ada deskripsi.",
+    "noActivity": "Belum ada aktivitas publik terbaru.",
+    "unavailableTitle": "Aktivitas GitHub sementara tidak tersedia",
+    "unavailableDescription": "GitHub API tidak dapat diakses, tetapi profil lengkap tetap tersedia.",
+    "events": {
+      "push": "Mengirim {count, plural, one {# commit} other {# commit}} ke",
+      "pullRequest": "{action} pull request di",
+      "issue": "{action} issue di",
+      "create": "Membuat {type} di",
+      "star": "Memberi star pada",
+      "fork": "Melakukan fork pada",
+      "update": "Memperbarui"
+    }
   },
   "contact": {
     "title": "Mari Bekerja Sama",

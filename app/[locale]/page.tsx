@@ -3,6 +3,7 @@ import Projects from "@/components/projects";
 import Technology from "@/components/technology";
 import ContactSection from "@/components/contact-section";
 import Hero from "@/components/hero";
+import GitHubActivity from "@/components/github-activity";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <USPList />
       <Projects />
       <Technology />
+      <GitHubActivity />
       <ContactSection />
     </>
   );

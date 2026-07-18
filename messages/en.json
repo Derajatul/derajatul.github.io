@@ -3,6 +3,7 @@
     "home": "Home",
     "projects": "Projects",
     "technology": "Technology",
+    "github": "GitHub",
     "contact": "Contact"
   },
   "hero": {
@@ -121,6 +122,34 @@
   "technology": {
     "title": "Tools that keep your next launch smooth",
     "subtitle": "You don’t need to learn the stack—just know that every choice here keeps your site fast, secure, and easy to update. These are the ingredients I rely on to ship dependable results."
+  },
+  "github": {
+    "badge": "Open-source activity",
+    "title": "Building in public on GitHub",
+    "subtitle": "A live view of the repositories, tools, and recent public work behind my development practice.",
+    "stats": {
+      "repositories": "Repositories",
+      "stars": "Stars earned",
+      "followers": "Followers"
+    },
+    "recentActivity": "Recent activity",
+    "featuredRepositories": "Featured repositories",
+    "topLanguages": "Most-used languages",
+    "viewProfile": "View GitHub profile",
+    "updated": "Updated {date}",
+    "noDescription": "No description provided.",
+    "noActivity": "No recent public activity is available.",
+    "unavailableTitle": "GitHub activity is temporarily unavailable",
+    "unavailableDescription": "The GitHub API could not be reached, but the full profile is still available.",
+    "events": {
+      "push": "Pushed {count, plural, one {# commit} other {# commits}} to",
+      "pullRequest": "{action} a pull request in",
+      "issue": "{action} an issue in",
+      "create": "Created a {type} in",
+      "star": "Starred",
+      "fork": "Forked",
+      "update": "Updated"
+    }
   },
   "contact": {
     "title": "Let's Work Together",
