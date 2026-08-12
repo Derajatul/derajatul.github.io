@@ -3,6 +3,7 @@
     "home": "Home",
     "projects": "Projects",
     "technology": "Technology",
+    "writeups": "Writing",
     "github": "GitHub",
     "contact": "Contact"
   },
@@ -123,6 +124,39 @@
     "title": "Tools that keep your next launch smooth",
     "subtitle": "You don’t need to learn the stack—just know that every choice here keeps your site fast, secure, and easy to update. These are the ingredients I rely on to ship dependable results."
   },
+  "writeups": {
+    "badge": "Engineering write-ups",
+    "title": "The thinking behind the build",
+    "subtitle": "Practical notes on architecture, performance, and the trade-offs behind production frontend work.",
+    "topicsLabel": "Article topics",
+    "readArticle": "Read engineering write-up",
+    "items": [
+      {
+        "slug": "bca-promo",
+        "category": "Performance",
+        "title": "Building a fast campaign platform under real traffic",
+        "description": "How modular UI, deliberate image delivery, and reusable primitives keep a content-heavy promotional platform responsive.",
+        "readTime": "6 min read",
+        "topics": ["Next.js", "Images", "Web Vitals"]
+      },
+      {
+        "slug": "bca-ocean",
+        "category": "Architecture",
+        "title": "Structuring complex discovery flows without fragile state",
+        "description": "A breakdown of state boundaries, data fetching, and progressive loading for a multi-level business directory.",
+        "readTime": "8 min read",
+        "topics": ["React", "State", "Data fetching"]
+      },
+      {
+        "slug": "bca-simulasi-obligasi",
+        "category": "Correctness",
+        "title": "Designing financial interfaces users can trust",
+        "description": "Notes on numerical precision, clear validation, and responsive visualization when building an investment simulator.",
+        "readTime": "7 min read",
+        "topics": ["TypeScript", "Precision", "UX"]
+      }
+    ]
+  },
   "github": {
     "badge": "Open-source activity",
     "title": "Building in public on GitHub",
@@ -152,8 +186,9 @@
     }
   },
   "contact": {
-    "title": "Let's Work Together",
-    "subtitle": "Have a project in mind? Let's talk about it.",
+    "title": "Let's Talk",
+    "subtitle": "Got a project or idea in mind?",
+    "description": "Send a short email with the scope, timeline, and any design files or references. I'll reply personally within one business day.",
     "name": "Name",
     "email": "Email",
     "message": "Message",

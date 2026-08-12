@@ -3,6 +3,7 @@
     "home": "Beranda",
     "projects": "Proyek",
     "technology": "Teknologi",
+    "writeups": "Tulisan",
     "github": "GitHub",
     "contact": "Kontak"
   },
@@ -165,6 +166,39 @@
     "title": "Alat yang memastikan peluncuran Anda lancar",
     "subtitle": "Anda tidak perlu mempelajari tumpukan teknisnya—cukup ketahui bahwa setiap pilihan di sini menjaga situs Anda tetap cepat, aman, dan mudah diperbarui. Ini adalah bahan-bahan yang saya andalkan untuk memberikan hasil yang andal."
   },
+  "writeups": {
+    "badge": "Tulisan engineering",
+    "title": "Pemikiran di balik proses pengembangan",
+    "subtitle": "Catatan praktis mengenai arsitektur, performa, dan pertimbangan teknis di balik pekerjaan frontend production.",
+    "topicsLabel": "Topik tulisan",
+    "readArticle": "Baca tulisan engineering",
+    "items": [
+      {
+        "slug": "bca-promo",
+        "category": "Performa",
+        "title": "Membangun platform campaign yang cepat untuk trafik nyata",
+        "description": "Bagaimana UI modular, pengiriman gambar yang terencana, dan komponen reusable menjaga platform promosi tetap responsif.",
+        "readTime": "6 menit baca",
+        "topics": ["Next.js", "Gambar", "Web Vitals"]
+      },
+      {
+        "slug": "bca-ocean",
+        "category": "Arsitektur",
+        "title": "Menyusun alur pencarian kompleks tanpa state yang rapuh",
+        "description": "Pembahasan batasan state, pengambilan data, dan progressive loading untuk direktori bisnis bertingkat.",
+        "readTime": "8 menit baca",
+        "topics": ["React", "State", "Data fetching"]
+      },
+      {
+        "slug": "bca-simulasi-obligasi",
+        "category": "Akurasi",
+        "title": "Merancang antarmuka finansial yang dapat dipercaya",
+        "description": "Catatan mengenai presisi angka, validasi yang jelas, dan visualisasi responsif dalam membangun simulator investasi.",
+        "readTime": "7 menit baca",
+        "topics": ["TypeScript", "Presisi", "UX"]
+      }
+    ]
+  },
   "github": {
     "badge": "Aktivitas open source",
     "title": "Berkarya secara terbuka di GitHub",
@@ -194,8 +228,9 @@
     }
   },
   "contact": {
-    "title": "Mari Bekerja Sama",
-    "subtitle": "Punya proyek dalam pikiran? Mari bicarakan.",
+    "title": "Mari bicara tentang proyek Anda",
+    "subtitle": "Punya proyek atau ide yang ingin dibahas?",
+    "description": "Kirim saja email singkat berisi gambaran proyek, target waktu, dan kalau ada, file desain atau referensi. Saya akan balas langsung dalam satu hari kerja.",
     "name": "Nama",
     "email": "Email",
     "message": "Pesan",

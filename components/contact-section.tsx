@@ -21,9 +21,7 @@ export default function ContactSection() {
           {t("subtitle")}
         </h2>
         <p className="text-lg text-[#C2C2C2]">
-          Want to chat through scope first? Send a quick email with timelines,
-          goals, and any design files. I’ll reply personally within one business
-          day.
+          {t("description")}
         </p>
         <div className="flex flex-wrap items-center gap-4">
           <ButtonLink href={mailto}>{t("send")}</ButtonLink>
