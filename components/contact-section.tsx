@@ -20,9 +20,7 @@ export default function ContactSection() {
         <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
           {t("subtitle")}
         </h2>
-        <p className="text-lg text-[#C2C2C2]">
-          {t("description")}
-        </p>
+        <p className="text-lg text-[#C2C2C2]">{t("description")}</p>
         <div className="flex flex-wrap items-center gap-4">
           <ButtonLink href={mailto}>{t("send")}</ButtonLink>
         </div>
